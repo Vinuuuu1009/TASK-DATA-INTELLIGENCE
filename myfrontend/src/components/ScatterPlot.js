@@ -1,8 +1,9 @@
+// src/components/ScatterPlot.js
 import React from 'react';
 import { Scatter } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, Title, Tooltip, Legend } from 'chart.js';
 
-// Register the components you need
+// Register the components needed
 ChartJS.register(CategoryScale, LinearScale, PointElement, Title, Tooltip, Legend);
 
 const ScatterPlot = ({ data }) => {
@@ -13,5 +14,5 @@ const ScatterPlot = ({ data }) => {
     </div>
   );
 };
-
 export default ScatterPlot;
+
